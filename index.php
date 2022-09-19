@@ -76,15 +76,15 @@
     // echo ceil($numrow/$per_page)."<br>";
     echo "<p style='text-align:center;font-family: arial, sans-serif;'>";
     if($pageNow>0){
-        echo "<a href='show_product.php?page=$p_pages'>PREVIOUS</a>";
+        echo "<a href='index.php?page=$p_pages'>PREVIOUS</a>";
     }
 
     for($i=0;$i<ceil($numrow/$per_page);$i++){
-        echo "<a href='show_product.php?page=$i'>[".($i+1)."]</a>";
+        echo "<a href='index.php?page=$i'>[".($i+1)."]</a>";
     }
 
     if($n_pages<ceil($numrow/$per_page)){
-        echo "<a href='show_product.php?page=$n_pages'>NEXT</a>";
+        echo "<a href='index.php?page=$n_pages'>NEXT</a>";
     }
     echo "</p>";
     echo "<p style='text-align:center;font-family: arial, sans-serif;'>page ".($pageNow+1)."</p>";
@@ -125,15 +125,15 @@
     }
     echo "<p style='text-align:center;font-family: arial, sans-serif;'>";
     if($pageNow>0){
-        echo "<a href='show_product.php?page=$p_pages'>PREVIOUS</a>";
+        echo "<a href='index.php?page=$p_pages'>PREVIOUS</a>";
     }
 
     for($i=0;$i<ceil($numrow/$per_page);$i++){
-        echo "<a href='show_product.php?page=$i'>[".($i+1)."]</a>";
+        echo "<a href='index.php?page=$i'>[".($i+1)."]</a>";
     }
 
     if($n_pages<ceil($numrow/$per_page)){
-        echo "<a href='show_product.php?page=$n_pages'>NEXT</a>";
+        echo "<a href='index.php?page=$n_pages'>NEXT</a>";
     }
     echo "</p>";
     echo "<p style='text-align:center;font-family: arial, sans-serif;'>page ".($pageNow+1)."</p>";
